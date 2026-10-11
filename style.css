@@ -2,6 +2,8 @@ body
 {
         background-color: #1b3722;
         color: #e8e8e8;
+        margin-left: 5px;
+        margin-right: 5px;
 }
 
 body, p, li

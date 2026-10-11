@@ -59,12 +59,13 @@ function submitFeedback(stars) {
         button.style.fontSize = "2rem";
         button.style.lineHeight = "1";
         button.style.padding = "0px";
-        button.style.paddingLeft = "10px";
+        button.style.paddingLeft = "25px";
 
         (function (selectedStars) {
             button.addEventListener("click", function () {
                 buttons.forEach(function (starButton, index) {
                     starButton.style.color = index < selectedStars ? "#f5c542" : "#8a8a8a";
+                    starButton.disabled = true;
                 });
                 submitFeedback(selectedStars);
             });
